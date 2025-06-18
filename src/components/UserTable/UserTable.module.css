@@ -1,0 +1,70 @@
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fafbfc;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.userTable th, .userTable td {
+  padding: 16px 12px;
+  text-align: left;
+}
+
+.userTable th {
+  background: #f3f4f6;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.row:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.row:hover {
+  background: #e9f5ff;
+  transition: background 0.2s;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.05em;
+}
+
+.email {
+  color: #888;
+  font-size: 0.95em;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  color: #e74c3c;
+  font-size: 1.3em;
+  cursor: pointer;
+  transition: color 0.2s;
+  padding: 0 8px;
+}
+
+.deleteBtn:hover {
+  color: #c0392b;
+}
+
+@media (max-width: 700px) {
+  .userTable th, .userTable td {
+    padding: 10px 6px;
+    font-size: 0.95em;
+  }
+  .name {
+    font-size: 1em;
+  }
+} 
